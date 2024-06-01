@@ -1,0 +1,9 @@
+export const tickets = (state) => state.tickets.tickets
+export const searchId = (state) => state.tickets.searchId
+export const visibleTickets = (state) => state.tickets.visibleTickets
+export const sort = (state) => state.sort
+export const filters = (state) => state.filters
+export const stop = (state) => state.tickets.stop
+export const fetchTicketsStatus = (state) => state.tickets.fetchTicketsStatus
+export const fetchSearchIdStatus = (state) => state.tickets.fetchSearchIdStatus
+export const error = (state) => state.tickets.error

@@ -1,0 +1,74 @@
+@import '../../Colors/Colors.scss';
+
+.ticket-card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 508px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  min-height: 238px;
+  max-height: 238px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $accent-color;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: grid;
+    gap: 5px 20px;
+    grid-template-areas:
+      'city-time-container travel-time-container transfers-container'
+      'city-time-container travel-time-container transfers-container';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    // text-align: center;
+  }
+
+  &__city-time {
+    grid-area: city-time-container;
+  }
+
+  &__travel-time {
+    grid-area: travel-time-container;
+  }
+
+  &__transfers {
+    grid-area: transfers-container;
+  }
+
+  &__title {
+    color: $card-title-color;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__value {
+    color: $main-text-color;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__price {
+    margin: 0;
+    color: $accent-color;
+  }
+
+  &__logo {
+    width: 110px;
+    height: 40px;
+    & img {
+      max-width: 100%;
+    }
+  }
+}
