@@ -34,6 +34,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 754px) {
+    margin-top: 10px;
+  }
 }
 
 .circle {
